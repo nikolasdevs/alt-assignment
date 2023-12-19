@@ -47,7 +47,7 @@
         <br />
         <form action="submit">
           <div>
-            <label for="fName">First Name</label>
+            <label for="fName">First Name*</label>
             <input
               id="fName"
               type="text"
@@ -57,7 +57,7 @@
           </div>
           <br />
           <div>
-            <label for="lName">Last Name</label>
+            <label for="lName">Last Name*</label>
             <input
               id="lName"
               type="text"
@@ -67,52 +67,56 @@
           </div>
           <br />
           <div>
-            <label for="gender">Gender</label>
-            <input
-              id="gender"
-              type="text"
-              placeholder="Select gender"
-              required
-            />
+            <label for="gender">Gender*</label>
+            <select name="gender" id="gender">
+              <option disabled selected hidden>Select an option</option>
+              <option value="option1">male</option>
+              <option value="option2">female</option>
+            </select>
           </div>
           <br />
           <div>
-            <label for="dob">Date of Birth</label>
-            <input id="dob" type="text" placeholder="dd/mm/yyyy" required />
+            <label for="dob">Date of Birth*</label>
+            <input id="dob" type="date" required />
           </div>
           <br />
           <div>
-            <label for="email">Email Address</label>
+            <label for="email">Email Address*</label>
             <input
               id="email"
-              type="text"
+              type="email"
               placeholder="Enter email address"
               required
             />
           </div>
           <br />
           <div>
-            <label for="education">Education Level</label>
-            <input
-              id="education"
-              type="text"
-              placeholder="Select level of education"
-              required
-            />
+            <label for="education">Education Level*</label>
+            <select name="education" id="education">
+              <option value="" disabled selected hidden>
+                Select level of education
+              </option>
+              <option value="">MA/MSc</option>
+              <option value="">BSc/BA</option>
+              <option value="">Diploma</option>
+            </select>
           </div>
           <br />
           <div>
-            <label for="country">Country</label>
-            <input
-              id="country"
-              type="text"
-              placeholder="Select your country"
-              required
-            />
+            <label for="country">Country*</label>
+            <select name="country" id="education">
+              <option value="" disabled selected hidden>
+                Select your country
+              </option>
+              <option value="">Nigeria</option>
+              <option value="">Ghana</option>
+              <option value="">Togo</option>
+            </select>
           </div>
+
           <br />
           <div>
-            <label for="state">State/City of Residence</label>
+            <label for="state">State/City of Residence*</label>
             <input
               id="state"
               type="text"
@@ -122,48 +126,55 @@
           </div>
           <br />
           <div>
-            <label for="employment">Employment Status</label>
-            <input
-              id="employment"
-              type="text"
-              placeholder="Select employment status"
-              required
-            />
+            <label for="employment">Employment*</label>
+            <select name="employment" id="employment">
+              <option disabled selected hidden>Select employment status</option>
+              <option value="Employed">Employed</option>
+              <option value="Unemployed">Unemployed</option>
+              <option value="self-employed">Self Employed</option>
+            </select>
           </div>
           <br />
           <div>
-            <label for="phone">Phone Number</label>
+            <label for="phone">Phone Number*</label>
             <input id="phone" type="text" placeholder="08123456789" required />
           </div>
           <br />
           <div>
-            <label for="school">Choose School</label>
-            <input
-              id="school"
-              type="text"
-              placeholder="Select school"
-              required
-            />
+            <label for="school">Choose School*</label>
+            <select name="school" id="school">
+              <option value="" disabled selected hidden>Select school</option>
+              <option value="business">School of Business</option>
+              <option value="creative">School of Creative</option>
+            </select>
           </div>
           <br />
           <div>
-            <label for="course">Choose Course of Study</label>
+            <label for="course">Choose Course of Study*</label>
             <input
               id="course"
               type="text"
-              placeholder="Select channel"
+              placeholder="Select course"
               required
             />
           </div>
           <br />
           <div>
-            <label for="channel">How did you hear about us?</label>
-            <input
-              id="channel"
-              type="text"
-              placeholder="Select channel"
-              required
-            />
+            <div>
+              <label for="school">How did you hear about us?*</label>
+              <select name="school" id="school">
+                <option value="" disabled selected hidden>
+                  Select channel
+                </option>
+                <option value="facebook">Facebook</option>
+                <option value="twitter">Twitter</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="youtube">YouTube</option>
+                <option value="whatsapp">Whatsapp</option>
+                <option value="friend">Friend</option>
+                <option value="instagram">Instagram</option>
+              </select>
+            </div>
           </div>
           <br />
           <div>
